@@ -9,11 +9,13 @@
 # Released under the same terms as Sensu (the MIT license); see LICENSE
 # for details.
 
-require 'rubygems' if RUBY_VERSION < '1.9.0'
 require 'net/https'
 require 'sensu-handler'
 require 'timeout'
 
+#
+#
+#
 class Pushover < Sensu::Handler
   def event_name
     @event['client']['name'] + '/' + @event['check']['name']
