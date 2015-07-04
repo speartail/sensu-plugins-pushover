@@ -1,7 +1,1 @@
-#
-# Set gem version
-#
-module SensuPluginsPushover
-  # Gem version
-  VERSION = '0.0.1.alpha.2'
-end
+require 'sensu-plugins-pushover/version'
