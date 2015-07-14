@@ -1,6 +1,6 @@
 ## Sensu-Plugins-pushover
 
-[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-pushover.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-pushover)
+[ ![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-pushover.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-pushover)
 [![Gem Version](https://badge.fury.io/rb/sensu-plugins-pushover.svg)](http://badge.fury.io/rb/sensu-plugins-pushover)
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-pushover/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-pushover)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-pushover/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-pushover)
