@@ -24,22 +24,22 @@ class Pushover < Sensu::Handler
   def handle
     apiurl = settings['pushover']['apiurl'] || 'https://api.pushover.net/1/messages'
 
-    if settings['pushover']['keys']
-      keys = settings['pushover']['keys']
-    else
-      keys = [
-        {
-          'userkey' => settings['pushover']['userkey'],
-          'token' => settings['pushover']['token']
-        }
-      ]
-    end
+    keys = if settings['pushover']['keys']
+             settings['pushover']['keys']
+           else
+             [
+               {
+                 'userkey' => settings['pushover']['userkey'],
+                 'token' => settings['pushover']['token']
+               }
+             ]
+           end
 
-    if @event['check']['status'] < 3
-      priority = @event['check']['status'] - 1
-    else
-      priority = 0
-    end
+    priority = if @event['check']['status'] < 3
+                 @event['check']['status'] - 1
+               else
+                 0
+               end
 
     params = {
       title: event_name,

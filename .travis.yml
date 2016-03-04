@@ -16,13 +16,15 @@ notifications:
     on_failure: always
 script:
 - bundle exec rake default
+- gem build sensu-plugins-pushover.gemspec
+- gem install sensu-plugins-pushover-*.gem
 deploy:
   provider: rubygems
   api_key:
-    secure: RECGKQ/hT6/j3xkXPjoNIdKEmgfXLA4sa7ZGgdoorpOZbmalfWncHIV5rldqnTqenTTx81tB/eAqTP0Fv25evKVhGiMUIhf8GUjJMTFvl7UUUGlDWYvLE68hyPHSJLXIqy6/JYY1lHXZ8kbVKLc4T8JKVz4bq7OMs3jFeqadyOw=
+    secure: etsEO1mszocoQGVZs6r8SfIMb25yetC7sOLwpKVUArHSSxxU4Cx3+27BsAeVj1EdQ+86Txvwr8CVnwaOLxQN65W1wNXZ6jIefyq8wpPpXrCvPFeKiLrOQ8j9PcCaOsTwJ6gErojsNErhWS6clVaRlVCJh8lhrDrQSR8eY56MjkU=
   gem: sensu-plugins-pushover
   on:
-    tags: true
+    ags: true
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0

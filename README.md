@@ -5,7 +5,6 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-pushover/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-pushover)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-pushover/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-pushover)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-pushover.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-pushover)
-[ ![Codeship Status for sensu-plugins/sensu-plugins-pushover](https://codeship.com/projects/79576aa0-edb0-0132-5c33-1efd3f886df2/status?branch=master)](https://codeship.com/projects/84061)
 
 ## Functionality
 
