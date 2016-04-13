@@ -24,7 +24,7 @@ deploy:
     secure: etsEO1mszocoQGVZs6r8SfIMb25yetC7sOLwpKVUArHSSxxU4Cx3+27BsAeVj1EdQ+86Txvwr8CVnwaOLxQN65W1wNXZ6jIefyq8wpPpXrCvPFeKiLrOQ8j9PcCaOsTwJ6gErojsNErhWS6clVaRlVCJh8lhrDrQSR8eY56MjkU=
   gem: sensu-plugins-pushover
   on:
-    ags: true
+    tags: true
     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
