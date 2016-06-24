@@ -7,6 +7,9 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 ### Fixed
 - Silenced Object#timeout deprecation warnings under Ruby 2.3 by using Timeout.timeout instead.
 
+### Removed
+- Removed Ruby 1.9.3 support; add Ruby 2.3.0 support to test matrix
+
 ## [0.0.2] - 2015-07-14
 ### Changed
 - updated sensu-plugin gem to 1.2.0
