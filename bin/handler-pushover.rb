@@ -56,7 +56,7 @@ class Pushover < Sensu::Handler
 
     keys.each do |key|
       begin
-        timeout(5) do
+        Timeout.timeout(5) do
           params['user'] = key['userkey']
           params['token'] = key['token']
           req.set_form_data(params)
