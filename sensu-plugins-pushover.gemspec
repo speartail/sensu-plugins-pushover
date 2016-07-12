@@ -2,12 +2,7 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'date'
-
-if RUBY_VERSION < '2.0.0'
-  require 'sensu-plugins-pushover'
-else
-  require_relative 'lib/sensu-plugins-pushover'
-end
+require_relative 'lib/sensu-plugins-pushover'
 
 Gem::Specification.new do |s|
   s.authors                = ['Sensu-Plugins and contributors']
