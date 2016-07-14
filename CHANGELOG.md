@@ -4,7 +4,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
-### Fixed
+### Changed
+- Changed dependency on sensu-plugin from strict (= 1.2.0) to pessimistic (~> 1.2)
 - Silenced Object#timeout deprecation warnings under Ruby 2.3 by using Timeout.timeout instead.
 
 ### Removed
